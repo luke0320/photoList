@@ -26,11 +26,11 @@ class PhotoCell: UICollectionViewCell {
         let lbl = UILabel()
         lbl.text = "Default Text Default Text Default Text Default Text"
         lbl.textColor = .black
-        lbl.font = .systemFont(ofSize: 20)
+        lbl.font = .systemFont(ofSize: 17)
         lbl.numberOfLines = 2
         lbl.lineBreakMode = .byTruncatingTail
         lbl.adjustsFontSizeToFitWidth = true
-        lbl.minimumScaleFactor = 0.6
+        lbl.minimumScaleFactor = 0.8
         return lbl
     }()
     
@@ -57,7 +57,7 @@ class PhotoCell: UICollectionViewCell {
         idLabel.leadingAnchor.constraint(equalTo: imageView.leadingAnchor, constant: 5).isActive = true
         idLabel.widthAnchor.constraint(lessThanOrEqualTo: widthAnchor, multiplier: 0.9).isActive = true
         
-        titleLabel.centerInSuperview(from: .bottom, vOffset: -15)
+        titleLabel.centerInSuperview(from: .bottom, vOffset: -5)
         titleLabel.widthAnchor.constraint(lessThanOrEqualTo: widthAnchor, multiplier: 0.9).isActive = true
     }
     
